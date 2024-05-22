@@ -1,0 +1,16 @@
+use airline;
+create table cabin_class(rdate date, class char(10));
+select * from cabin_class;
+create table login(username varchar(10),passwd varchar(10));
+create table payment(cardno int(12),fullname char(10),expirydate date);
+select * from login;
+select * from payment;
+create table feedback(sno int(2), review varchar(40), rate varchar(5));
+select * from feedback;
+create table refund(sno int(2), class char(10), refund int(12));
+alter table refund drop sno;
+alter table feedback drop sno;
+desc refund;
+desc payment; 
+desc feedback;
+show tables;
